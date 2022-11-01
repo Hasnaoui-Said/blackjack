@@ -80,12 +80,12 @@ public class Main {
                             System.out.println("Perdu");
                         }else System.out.println("erro logique!!!!");
 
-                        jack.addDefausserCartes(player.getListCartes());
-                        jack.addDefausserCartes(dealer.getListCartes());
-                        player.clearList();
-                        dealer.clearList();
                     }
                 }
+                jack.addDefausserCartes(player.getListCartes());
+                jack.addDefausserCartes(dealer.getListCartes());
+                player.clearList();
+                dealer.clearList();
 
                 if(jack.getCartes().size() <= 13){
                     System.out.println("----> "+jack.getCartes().size());
